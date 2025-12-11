@@ -16,7 +16,8 @@ body{
 }
 .container{max-width:var(--container);margin:0 auto;padding:0 16px}
 .site-header{background:linear-gradient(90deg,#fff 0,#fff0);border-bottom:1px solid #eee}
-.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:18px 16px}
+.site-header 
+.container{display:flex;align-items:center;justify-content:space-between;padding:18px 16px}
 .logo{margin:0;font-size:20px;letter-spacing:0.5px}
 .nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px}
 .hero{padding:28px 0}
