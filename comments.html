@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comments</title>
+    <link rel="stylesheet" href="cooking-website.css">
+    <meta name="description" content="Leave your comments">
+ </head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Comments</h1>
+            <nav class="nav">
+                <a href="cooking-website.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="#">Comments</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main">
+        <section class="comments">
+            <h2>Leave a Comment</h2>
+            <form id="comment-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit Comment</button>
+            </form>
+            <div id="comments-list"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>&copy; 2025 Sasho</small>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const commentForm = document.getElementById('comment-form');
+            const commentsList = document.getElementById('comments-list');
+
+            // Load comments from localStorage
+            function loadComments() {
+                const comments = JSON.parse(localStorage.getItem('comments') || '[]');
+                commentsList.innerHTML = '';
+                comments.forEach(comment => {
+                    const commentDiv = document.createElement('div');
+                    commentDiv.className = 'comment';
+                    commentDiv.innerHTML = `
+                        <div class="author">${comment.name}</div>
+                        <div class="date">${new Date(comment.date).toLocaleString()}</div>
+                        <div>${comment.text}</div>
+                    `;
+                    commentsList.appendChild(commentDiv);
+                });
+            }
+
+            // Handle form submission
+            commentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value.trim();
+                const text = document.getElementById('comment').value.trim();
+                if (name && text) {
+                    const comments = JSON.parse(localStorage.getItem('comments') || '[]');
+                    comments.push({
+                        name: name,
+                        text: text,
+                        date: new Date().toISOString()
+                    });
+                    localStorage.setItem('comments', JSON.stringify(comments));
+                    commentForm.reset();
+                    loadComments();
+                }
+            });
+
+            loadComments();
+        });
+    </script>
+</body>
+</html>

@@ -3,56 +3,44 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cooking Website</title>
+    <title>Sasho's Personal Website</title>
     <link rel="stylesheet" href="cooking-website.css">
-    <meta name="description" content="Simple cooking website with searchable recipes">
+    <meta name="description" content="Personal website of Sasho">
  </head>
 <body>
     <header class="site-header">
         <div class="container">
-            <h1 class="logo">The Kitchen</h1>
+            <h1 class="logo">Heaven food</h1>
             <nav class="nav">
                 <a href="#">Home</a>
-                <a href="#">Recipes</a>
-                <a href="#">About</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="comments.html">Comments</a>
             </nav>
         </div>
     </header>
 
     <main class="container main">
         <section class="hero">
-            <h2>Delicious recipes, made simple</h2>
-            <p>Search, filter and explore easy-to-follow recipes.</p>
+            <div class="hero-content">
+                <img src="images/profile pic.jpg" alt="Sasho's profile picture" class="profile-pic">
+                <div class="hero-text">
+                    <h2>Welcome to Sasho's culinary world</h2>
+                    <p>Hi, I'm Sasho. I love cooking and sharing recipes. Here you will find easy and straight to the point recipes for all occasions.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="controls">
-            <input id="search" type="search" placeholder="Search recipes or ingredients..." aria-label="Search recipes">
-            <select id="difficulty">
-                <option value="">All difficulties</option>
-                <option value="Easy">Easy</option>
-                <option value="Medium">Medium</option>
-                <option value="Hard">Hard</option>
-            </select>
-        </section>
-
-        <section id="recipes" class="grid" aria-live="polite">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am passionate about cooking and experimenting with new recipes. When I'm not in the kitchen, I enjoy mountainbiking and snowboarding. I am a sports person and we all know that
+                you can't be efficient in sport without proper nutrition. Feel free to browse my recipe collection on the Recipes page.</p>
         </section>
     </main>
-
-    <div id="modal" class="modal" aria-hidden="true">
-        <div class="modal-backdrop" id="modal-backdrop"></div>
-        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-            <button id="modal-close" class="modal-close" aria-label="Close">×</button>
-            <div id="modal-content"></div>
-        </div>
-    </div>
 
     <footer class="site-footer">
         <div class="container">
             <small>Sasho was here</small>
         </div>
     </footer>
-
-    <script src="cooking-website.js"></script>
 </body>
 </html>

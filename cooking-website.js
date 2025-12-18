@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             difficulty: 'Easy',
             ingredients: ['spaghetti','garlic','olive oil','chili flakes','parsley'],
             instructions: 'Cook pasta. In a pan, gently toast garlic in oil, toss with pasta and parsley. Serve hot.',
-            image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&h=400&fit=crop'
+            image: './images/aglio e olio.jpg'
         },
         {
             id: 2,
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             difficulty: 'Medium',
             ingredients: ['chicken','lemon','rosemary','olive oil','salt'],
             instructions: 'Rub chicken, roast until golden and cooked through. Rest, carve and serve.',
-            image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&h=400&fit=crop'
+            image: './images/roasted lemon chicken.jpg'
         },
         {
             id: 3,
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             difficulty: 'Easy',
             ingredients: ['flour','cocoa powder','milk','sugar','butter'],
             instructions: 'Mix ingredients in a mug and microwave for about 90 seconds.',
-            image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop'
+            image: './images/chocolate mug cake.jpg'
         },
         {
             id: 5,
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             difficulty: 'Medium',
             ingredients: ['pizza dough','tomato sauce','mozzarella','basil','olive oil'],
             instructions: 'Roll dough, spread sauce, add cheese and basil. Bake at 450°F for 12-15 minutes until golden.',
-            image: 'https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=600&h=400&fit=crop'
+            image: './images/margherita pizza.jpg'
         },
         {
             id: 6,
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
             difficulty: 'Medium',
             ingredients: ['salmon fillets','asparagus','lemon','garlic','butter'],
             instructions: 'Season salmon, grill 4-6 min per side. Grill asparagus with garlic butter. Serve with lemon.',
-            image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop'
+            image: './images/grilled salmon.jpg'
         },
         {
             id: 7,
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             difficulty: 'Easy',
             ingredients: ['ground beef','taco shells','lettuce','cheese','salsa','sour cream'],
             instructions: 'Brown beef, season and warm shells. Top with lettuce, cheese, salsa and sour cream.',
-            image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop'
+            image: './images/beef tacos.jpg'
         },
         {
             id: 10,
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
             difficulty: 'Hard',
             ingredients: ['chicken','butter','cream','tomatoes','garam masala','ginger','garlic'],
             instructions: 'Marinate and grill chicken. Simmer in spiced tomato-cream sauce. Serve with rice or naan.',
-            image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop'
+            image: './images/butter chicken curry.jpg'
         },
         {
             id: 11,
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
             difficulty: 'Easy',
             ingredients: ['cucumber','tomatoes','red onion','olives','feta cheese','olive oil'],
             instructions: 'Chop vegetables, toss with olives and feta. Dress with olive oil and oregano.',
-            image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&h=400&fit=crop'
+            image: './images/greek salad with feta.jpg'
         },
         {
             id: 12,
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
             difficulty: 'Hard',
             ingredients: ['beef tenderloin','puff pastry','mushrooms','prosciutto','shallots','egg wash'],
             instructions: 'Sear beef, wrap with mushroom duxelles and prosciutto, cover in pastry. Bake until golden.',
-            image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop'
+            image: './images/beef wellington.jpg'
         },
         {
             id: 15,
